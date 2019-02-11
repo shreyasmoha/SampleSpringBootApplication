@@ -126,34 +126,34 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	<resources>
-		<resource>
-			<directory>src/main/resources</directory>
-			<filtering>true</filtering>
-			<includes>
-				<include>**/*.properties</include>
-				<include>**/*.yml</include>
-			</includes>
-		</resource>
-        </resources>
-        <pluginManagement>
-        	<plugins>
-        		<plugin>
-        			<groupId>org.jacoco</groupId>
-        			<artifactId>jacoco-maven-plugin</artifactId>
-        			<version>0.7.5.20150241946</version>
-        			<configuration>
-        				<excludes>
-        					<exclude>com/example/issuetracking_rs/mode/*</exclude>
-        					<exclude>com/example/issuetracking_rs/mapper/*</exclude>
-        					<exclude>com/example/issuetracking_rs/Application*</exclude>
-        					<exclude>com/example/issuetracking_rs/SwaggerConfig*</exclude>
-        					<exclude>com/example/issuetracking_rs/exceptions/*</exclude>
-        				</excludes>
-        			</configuration>
-        		</plugin>
-        	</plugins>
-        </pluginManagement>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.yml</include>
+				</includes>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.7.5.20150241946</version>
+					<configuration>
+						<excludes>
+							<exclude>com/example/issuetracking_rs/mode/*</exclude>
+							<exclude>com/example/issuetracking_rs/mapper/*</exclude>
+							<exclude>com/example/issuetracking_rs/Application*</exclude>
+							<exclude>com/example/issuetracking_rs/SwaggerConfig*</exclude>
+							<exclude>com/example/issuetracking_rs/exceptions/*</exclude>
+						</excludes>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<repositories>
